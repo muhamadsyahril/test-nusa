@@ -1,4 +1,4 @@
 <?php
-	include($_SERVER['DOCUMENT_ROOT'].'/api-ecommerce/includes/variables.php');
+	include($_SERVER['DOCUMENT_ROOT'].'/test-nusa/soaltiga/includes/variables.php');
 	$connect->close();
 ?>
