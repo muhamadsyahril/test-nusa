@@ -1,6 +1,7 @@
-###Jawaban Soal Nusatekno###
+#Jawaban Soal Nusatekno#
 
-##jawaban soal no 1##
+###jawaban soal no 1###
+segitiga.html
 
 ```html
 
@@ -101,3 +102,81 @@
 </html>
 
 ```
+
+
+###jawaban soal no 2###
+findnumber.php
+```php
+<?php 
+error_reporting(E_ALL);
+class short{
+	
+	public function findNumber($arr, $x)
+	{
+		$nofound = -1;
+
+		foreach ($arr as $key => $value) {
+			
+			if($value == $x){
+				$findKey[] = $key;
+			}
+			else{
+				$findKey[] = -1;
+			}
+		}
+
+		foreach ($findKey as $k => $v) {
+			if($k == $v){
+				return $k;
+			}
+		}
+
+		return $nofound;
+	}
+}
+
+$angka = array(3,1,2,5,6,7,8,7);
+$short = new short;
+
+echo $short->findNumber($angka, 3)."<br/>";
+echo $short->findNumber($angka, 5)."<br/>";
+echo $short->findNumber($angka, 7)."<br/>";
+echo $short->findNumber($angka, 9)."<br/>";
+?>
+```
+
+###jawaban soal no 3###
+index.php
+
+hasil
+```
+a.
+
+Total penjualan pada bulan february = Rp 12000
+b.
+
+ID Barang yang paling banyak dibeli = 2
+c.
+
+Jumlah Transaksi keseluruhan = Rp 492000
+d.
+
+Total penjualan per ID Barang.
+ID Barang	Jumlah
+1	120000
+2	300000
+3	72000
+e.
+
+Jumlah Barang dan Total Penjualan setiap transaksi.
+ID Transaksi	Kode	Jumlah	Total
+1	TRX/2015/0001	9	197000
+2	TRX/2015/0002	2	50000
+3	TRX/2015/0003	2	24000
+4	TRX/2015/0004	5	112000
+5	TRX/2015/0005	6	109000
+
+```
+
+
+
