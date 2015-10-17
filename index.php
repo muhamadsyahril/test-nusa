@@ -96,6 +96,9 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/test-nusa/soaltiga/includes/connect_dat
 		            $groups[$key]['total'] = $groups[$key]['total'] +$item['total'];
 		        }
 		    }
+
+
+		    $connect->close();
 			
 
 ?>
